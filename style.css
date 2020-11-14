@@ -1,0 +1,43 @@
+@keyframes updown {
+    0% {
+        transform: translate3d(0, 0%, 0);
+    }
+    50% {
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        transform: translate3d(0, 0%, 0);
+    }
+}
+
+.button {
+    background-color: #768899;
+    color: white;
+    border: none;
+    padding: 20px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    animation-name: updown;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    width: 180px;
+    height: 60px;
+}
+
+#box {
+    margin-top: 150px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid aqua;
+    position: absolute;
+}
+
+#circle {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ff0000;
+    position: relative;
+    top: 40%;
+    left: 40%;
+}
+
